@@ -21,12 +21,11 @@ header{
     position: absolute;
     top: 0;
     right: 0;
-    width: 70.43%;
+    /* max-width: 1204px; */
+    width: 40%;
     height: 93px;
     background: #F5F5F5;
     z-index: 2;
-    border-bottom-left-radius: 10px;
-
 }
 .head-cont{
     display: flex;
@@ -37,12 +36,16 @@ header{
 nav{
     width: fit-content;
     display: flex;
-    margin-bottom: 26px;
+    align-items: center;
+    margin-bottom: 29px;
+    background: #F5F5F5;
     z-index: 4;
+    padding-left: 43px;
+    height: 93px;
+    border-bottom-left-radius: 10px;
 }
 ul{
     display: flex;
-
     align-items: center;
     padding: 0;
     margin: 0;
@@ -71,6 +74,8 @@ li:last-child{
     width: 276px;
     overflow: hidden;
     padding-left: 17px;
+    font-size: 14px;
+    color: #979797;
 }
 .search-btn{
     position: absolute;
@@ -177,11 +182,15 @@ li:last-child{
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 .child img{
     width: 100%;
     height: 100%;
 }
+/* .child:hover .right-text{
+    transform: translateY(43px);
+} */
 .time{
     width: fit-content;
     position: absolute;
@@ -207,7 +216,8 @@ li:last-child{
     bottom: 0;
     padding: 0 20px;
     padding-top: 27px;
-    background: rgba(36,36,36,0.4);
+    background: -webkit-linear-gradient(90deg
+    , #020024 0%, #242424 0%, #00d4ff00 76%);
 }
 .right-text h3{
     font-size: 14px;
@@ -229,7 +239,7 @@ li:last-child{
     section2
 */
 .sc-line{
-    margin-top: 1.47%;
+    margin-top: 27px;
     margin-bottom: 53px;
 }
 .scroll{
@@ -614,6 +624,9 @@ li:last-child{
 .ev-right2-box{
     padding: 0 10px;
 }
+/* .ev-right2-box:last-child{
+    padding-right: 0;
+} */
 .ev-right1-box h3,
 .ev-right2-box h3{
     font-size: 14px;
@@ -732,7 +745,6 @@ li:last-child{
     font-size: 16px;
     font-weight: 700;
     color: #585858;
-    /* padding: 0 10px; */
     font-family: 'Open Sans', sans-serif;
 }
 .scr-box p{
@@ -751,16 +763,13 @@ li:last-child{
     cursor: pointer;
     z-index: 44;
 }
+
+.scr-box h3.active{
+    color: #4A821B;
+    font-family: 'Open Sans', sans-serif;
+}
 .circle.active{
     background: #4A821B;
-    
-}
-.scr-box h3.active{
-    font-size: 16px;
-    font-weight: 700;
-    color: #4A821B;
-    /* padding: 0 10px; */
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* 
@@ -820,8 +829,8 @@ footer{
     margin-bottom: 10px;
 }
 .form-icon a{
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     background: #FFFFFF;
     color: rgba(95,152,47,0.76);
     border: 1px solid rgb(95, 152, 47);
