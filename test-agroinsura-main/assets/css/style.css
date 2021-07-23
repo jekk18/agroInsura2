@@ -63,6 +63,9 @@ li a{
 li:last-child{
     margin-right: 143px;
 }
+.burger-menu{
+    display: none;
+}
 .search{
     /* display: none; */
     position: relative;
@@ -301,8 +304,8 @@ li:last-child{
     color: rgba(74,130,27,0.69)!important;
 }
 .back{
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
     background: #EEEEEE;
     display: flex;
     justify-content: center;
@@ -314,8 +317,8 @@ li:last-child{
     margin-right: 12px;
 }
 .next{
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
     background: #EEEEEE;
     display: flex;
     justify-content: center;
@@ -549,7 +552,9 @@ li:last-child{
     /* max-height: 160px; */
     height: 100%;
 }
-
+.hidden{
+    display: none;
+}
 .ev-left2-box::before{
     content: "";
     position: absolute;
@@ -582,6 +587,9 @@ li:last-child{
     display: grid;
     grid-template-rows: auto auto auto;
     width: 100%;
+}
+.hidden2{
+    display: none;
 }
 .ev-right1-box{
     width: 100%;
@@ -624,9 +632,7 @@ li:last-child{
 .ev-right2-box{
     padding: 0 10px;
 }
-/* .ev-right2-box:last-child{
-    padding-right: 0;
-} */
+
 .ev-right1-box h3,
 .ev-right2-box h3{
     font-size: 14px;
@@ -677,7 +683,6 @@ li:last-child{
     max-width: 368px;
     height: 173px;
     width: 100%;
-    /* height: 100%; */
     background: #18B697;
     margin-bottom: -7px;
 }
@@ -708,7 +713,7 @@ li:last-child{
 
 .scr-boxes{
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     width: 100%;
     padding: 0 12px;
@@ -726,17 +731,22 @@ li:last-child{
 }
 .scroll-line{
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     padding: 0;
     width: 100%;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     z-index: 11;
 }
+.margin-center{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 .bg-line{
-    width: 90%;
+    width: 87%;
     height: 2px;
     background: #E5E5E5;
 }
@@ -807,14 +817,14 @@ footer{
     height: 100%;
 }
 
-
+.footer-nav,
 .contact,
 .form-box{
     max-width: calc(100% / 4);
 }
-.footer-nav{
+/* .footer-nav{
     width: calc(100% / 4);
-}
+} */
 .contact ul{
     display: flex;
     flex-direction: column;
@@ -822,6 +832,8 @@ footer{
 }
 .contact ul li{
     margin: 0;
+    height: 23px;
+    overflow: hidden;
 }
 .form-icon{
     display: flex;
@@ -887,6 +899,8 @@ form input[type="text"]{
     height: 37px;
     padding: 3px 7px;
     color: #787878;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 button{
     position: absolute;
