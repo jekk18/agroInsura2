@@ -1,22 +1,9 @@
 @media (min-width:1200px){
     .right a:hover .right-text{
-        transform: translateY(40px);
+        transform: translateY(42px);
     }
 }
-@media (min-width:767px ){
-    .right a:hover{
-        transition-duration: 0.3s;
-    }
-    .right a:hover{
-        box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
-    }
-    .left-a:hover .left img{
-        transform: scale(1.3);
-    }
-    .left-a:hover .left-text{
-        transform: translateY(60px);
-    }
-}
+
 
 @media (max-width:1400px){
     /* 
@@ -25,7 +12,7 @@
     li:last-child{
         margin-right: 26px;
     }
-    li a{
+    li .nav-a{
         font-size: 16px;
     }
     .search input[type="text"]{
@@ -219,7 +206,7 @@
     li{
         margin-right: 26px;
     }
-    li a{
+    li .nav-a{
         font-size: 14px;
     }
     .search form{
@@ -271,10 +258,10 @@
     .back-next-box{
         padding-right: 5px;
     }
-    .cards{
-        grid-column-gap: 10px;
+    .sl-boxes{
+        padding: 0 5px;
     }
-    .card-text p {
+    .sl-text p {
         height: 38px;
     }
     .join-box{
@@ -443,7 +430,7 @@
         width: 100%;
         height: 102px;
     }
-
+    /* burger */
     .burger-menu{
         display: flex;
         justify-content: center;
@@ -451,6 +438,7 @@
         z-index: 55; 
     }
     .burger{
+        display: block;
         width: 32px;
         height: 23px;
         display: flex;
@@ -465,9 +453,63 @@
         border-radius: 10px;
         background: #4A821B;
     }
-    /* .burger-line:nth-child(2){
-       margin: 3px 0;
-    } */
+    .burger-link{
+        width: 80%;
+    }
+    .burger-link a{
+        font-size: 20px;
+        color: #4A821B!important;
+        padding: 7px 5px;
+        /* margin-bottom: 10px; */
+        display: block;
+        transition: 0.4s;
+        position: relative;
+        z-index: 98;
+        margin-top: 4px;
+    }
+    .burger-link a:first-child{
+        margin-top: 10px;
+    }
+    .burger-link a::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #4A821B;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    .burger-link a:hover{
+        color: #FFFFFF!important;
+        padding-left: 20px;
+    }
+    .burger-link a:hover::after{
+        width: 100%;
+    }
+    .burger-form{
+        width: fit-content;
+        margin-bottom: 18px;
+    }
+    .burger-input{
+        position: relative;
+        height: 35px!important;
+        width: 180px!important;
+        font-size: 16px;
+        padding-left: 45px!important;
+        outline: none;
+        border: none;
+        /* width: fit-content; */
+    }
+    .burger-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-radius: 5px 0 0 5px;
+        background: #A24D1D;
+    }
     /* 
     section 1
     */
@@ -517,25 +559,16 @@
     .load-text{
         font-size: 12px;
     }
-    .cards{
-        grid-template-columns: auto auto auto;
-    }
-    .cards a:nth-child(7){
-        display: none;
-    }
-    .cards a:nth-child(8){
-        display: none;
-    }
-    .card-title{
+    .time-sl{
         font-size: 10px;
         padding: 5px 10px;
     }
-    .card-text h3 {
+    .sl-text h3 {
         font-size: 10px;
         line-height: 14px;
         height: 30px;
     }
-    .card-text p{
+    .sl-text p{
         font-size: 10px;
         line-height: 14px;
         height: 30px;
@@ -685,6 +718,7 @@
         width: 30%;
         height: 1px;
         background: rgba(112,112,112,0.33);
+        transition: 0.5s;
     }
     /* 
         section 4
@@ -715,7 +749,7 @@
         max-width: 142px;
     }
     .footer-a{
-        font-size: 12px;
+        font-size: 14px;
     }
     form input[type="text"] {
         height: 23px;
@@ -785,11 +819,15 @@
         grid-column-gap: 8px;
         grid-row-gap: 9px;
     }
+    .right a:hover .right-text{
+        transform: translateY(0);
+    }
     .right-text {
         transform: translateY(38px);
         padding: 0 12px;
         padding-top: 30px;
         padding-bottom: 10px;
+        transition: 0.5s;
     }
     .right-text h3{
         height: 28px;
@@ -830,18 +868,9 @@
         grid-template-columns: auto auto;
         grid-column-gap: 8px;
     }
-    .card-text{
+    .sl-text{
         padding: 0 10px;
         padding-top: 8px;
-    }
-    .card-T img {
-        max-height: 104px;
-    }
-    .card-T:nth-child(5),
-    .card-T:nth-child(6),
-    .card-T:nth-child(7),
-    .card-T:nth-child(8){
-        display: none;
     }
     .join-box {
         display: flex;
@@ -944,6 +973,7 @@
     }
     .ev-left2-box:nth-child(3)::before{
         height: 1px;
+        
     }
     .ev-left2-box:nth-child(4){
         margin-top: 0;
@@ -974,6 +1004,11 @@
         width: 30%;
         height: 1px;
         background: rgba(112,112,112,0.33);
+        transition: 0.5s;
+    }
+    .ev-right1-box:nth-child(3):hover::before{
+        background: rgba(112,112,112,1);
+        width: 60%;
     }
     .ev-right1-box:nth-child(4)::before{
         height: 0;
@@ -1013,7 +1048,7 @@
         display: block;
         margin-top: 24px;
     }
-    .scr-line:last-child{
+    .last-line{
         width: 100%;
     }
     .margin-center{
@@ -1063,11 +1098,31 @@
         margin-bottom: 0;
     }
 }
-
+@media (max-width: 620px){
+    .burger-menu.active{
+        width: 50%;
+    }
+}
 @media(max-width: 575px){
+    .head-cont,
+    .parent,
+    .event-box,
+    .scr-boxes{
+        padding: 0 3%;
+    }
     .scr-box h3{
         padding-right: 59px;
+        padding-left: 0;
     }
+    .scr-box p{
+        padding-left: 0;
+    }
+    .pop-news{
+        left: 3%;
+    }
+    /* .analytic-link{
+        margin-left: 3%;
+    } */
 }
 @media(max-width: 511px){
     .scr-box h3{
@@ -1075,10 +1130,32 @@
     }
 }
 @media(max-width: 420px){
+    .burger-menu.active{
+        width: 70%;
+    }
     .scr-box h3{
         padding-right: 0;
     }
     .form-box h3{
         font-size: 12px;
+    }
+}
+@media (max-width:396px){
+    .right-text {
+        transform: translateY(43px);
+    }
+    .form-box h3 {
+        font-size: 11px;
+    }
+    form {
+        width: 145px;
+    }
+    form input[type="text"] {
+        width: 100px;
+    }
+}
+@media (max-width:361px){
+    .left-text h3{
+        height: 35px;
     }
 }

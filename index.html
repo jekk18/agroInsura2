@@ -12,9 +12,9 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="assets/css/slick.css">
 
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -27,15 +27,15 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#"><span class="icon-home"></span></a></li>
-                            <li><a href="#">Documents</a></li>
-                            <li><a href="#">Arvhive</a></li>
-                            <li><a href="#">Glossary</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">New Digest</a></li>
+                            <li><span class="icon-home"></span></li>
+                            <li><a class="nav-a" href="#">Documents</a></li>
+                            <li><a class="nav-a" href="#">Archive</a></li>
+                            <li><a class="nav-a" href="#">Glossary</a></li>
+                            <li><a class="nav-a" href="#">About</a></li>
+                            <li><a class="nav-a" href="#">New Digest</a></li>
                         </ul>
                         <div class="search">
-                            <form action="">
+                            <form class="burger-form" action="">
                                 <input type="text" name="" id="" placeholder="Enter your keywords here...">
                                 <button type="submit" class="search-btn">
                                     <span class="icon-search"></span>
@@ -45,6 +45,10 @@
                     </nav>
                     <div class="burger-menu">
                         <div class="burger-link">
+                            <form action="" class="burger-form">
+                                <input class="burger-input"  type="text" placeholder="Search here...">
+                                <button class="burger-btn"><span class="icon-search"></span></button>
+                            </form>
                             <a href="#">Documents</a>
                             <a href="#">Arvhive</a>
                             <a href="#">Glossary</a>
@@ -53,16 +57,15 @@
                        </div>
                     </div>
                     <div class="burger">
-                        <div class="burger-line"></div>
-                        <div class="burger-line"></div>
-                        <div class="burger-line"></div>
+                        <div class="burger-line burger-line1"></div>
+                        <div class="burger-line burger-line2"></div>
+                        <div class="burger-line burger-line3"></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="nav-bg"></div>
     </header>
-
     <main>
         <section>
             <div class="container">
@@ -155,10 +158,10 @@
         </section>
         <section class="sc-line">
             <div class="container">
+                <div class="scroll">
+                    <div class="line1"></div>
+                </div>
                 <div class="row">
-                    <div class="scroll">
-                        <div class="line1"></div>
-                    </div>
                     <div class="sec2-title">
                         <a href="#" class="lat-news">LATEST NEWS</a>
                         <div class="back-next-box">
@@ -168,136 +171,550 @@
                             <a href="#" class="see-all see-all2">SEE ALL</a>
                         </div>
                     </div>
-                    <div class="cards">
-                        <a href="#">
-                            <div class="card-T">
-                                <h4 class="card-title">31.05.2021</h4>
-                                <img src="assets/img/jImg1.jpg" alt="img">
-                                <div class="card-text">
-                                    <h3>
-                                        India - Stalin announces relief for crop
-                                        loss due to cyclone Yaas
-                                    </h3>
-                                    <p>
-                                        In the last few years there has been a fast
-                                        growth in the amount of Earth observation (EO)
-                                    </p>
+                    
+
+                    <!-- <div class="cards-slider">
+                        <div class="cards">
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg1.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>    
-                        <a href="#">
-                            <div class="card-T">
-                                <h4 class="card-title">31.05.2021</h4>
-                                <img src="assets/img/jImg2.jpg" alt="img">
-                                <div class="card-text">
-                                    <h3>
-                                        India - Stalin announces relief for crop
-                                        loss due to cyclone Yaas
-                                    </h3>
-                                    <p>
-                                        In the last few years there has been a fast
-                                        growth in the amount of Earth observation (EO)
-                                    </p>
+                            </a>    
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg2.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>   
-                        <a href="#">
-                            <div class="card-T">
-                                <h4 class="card-title">31.05.2021</h4>
-                                <img src="assets/img/jImg3.jpg" alt="img">
-                                <div class="card-text">
-                                    <h3>
-                                        India - Stalin announces relief for crop
-                                        loss due to cyclone Yaas
-                                    </h3>
-                                    <p>
-                                        In the last few years there has been a fast
-                                        growth in the amount of Earth observation (EO)
-                                    </p>
+                            </a>   
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg3.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>     
-                        <a href="#">
-                            <div class="card-T">
-                                <h4 class="card-title">31.05.2021</h4>
-                                <img src="assets/img/jImg4.jpg" alt="img">
-                                <div class="card-text">
-                                    <h3>
-                                        India - Stalin announces relief for crop
-                                        loss due to cyclone Yaas
-                                    </h3>
-                                    <p>
-                                        In the last few years there has been a fast
-                                        growth in the amount of Earth observation (EO)
-                                    </p>
+                            </a>     
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg4.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a> 
-                        <a href="#">
-                            <div class="card-T">
-                                <h4 class="card-title">31.05.2021</h4>
-                                <img src="assets/img/jImg5.jpg" alt="img">
-                                <div class="card-text">
-                                    <h3>
-                                        India - Stalin announces relief for crop
-                                        loss due to cyclone Yaas
-                                    </h3>
-                                    <p>
-                                        In the last few years there has been a fast
-                                        growth in the amount of Earth observation (EO)
-                                    </p>
+                            </a> 
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg5.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a> 
-                        <a href="#">
-                            <div class="card-T">
-                                <h4 class="card-title">31.05.2021</h4>
-                                <img src="assets/img/jImg6.jpg" alt="img">
-                                <div class="card-text">
-                                    <h3>
-                                        India - Stalin announces relief for crop
-                                        loss due to cyclone Yaas
-                                    </h3>
-                                    <p>
-                                        In the last few years there has been a fast
-                                        growth in the amount of Earth observation (EO)
-                                    </p>
+                            </a> 
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg6.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a> 
-                        <a href="#">
-                            <div class="card-T">
-                                <h4 class="card-title">31.05.2021</h4>
-                                <img src="assets/img/jImg7.jpg" alt="img">
-                                <div class="card-text">
-                                    <h3>
-                                        India - Stalin announces relief for crop
-                                        loss due to cyclone Yaas
-                                    </h3>
-                                    <p>
-                                        In the last few years there has been a fast
-                                        growth in the amount of Earth observation (EO)
-                                    </p>
+                            </a> 
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg7.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a> 
-                        <a href="#">
-                            <div class="card-T">
-                                <h4 class="card-title">31.05.2021</h4>
-                                <img src="assets/img/jImg8.jpg" alt="img">
-                                <div class="card-text">
-                                    <h3>
-                                        India - Stalin announces relief for crop
-                                        loss due to cyclone Yaas
-                                    </h3>
-                                    <p>
-                                        In the last few years there has been a fast
-                                        growth in the amount of Earth observation (EO)
-                                    </p>
+                            </a> 
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg8.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
                                 </div>
+                            </a> 
+                        </div>
+
+                        <div class="cards">
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg8.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>    
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg7.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>   
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg6.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>     
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg5.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </div>
+                            </a> 
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg4.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </div>
+                            </a> 
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg3.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </div>
+                            </a> 
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg2.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </div>
+                            </a> 
+                            <a href="#">
+                                <div class="card-T">
+                                    <h4 class="card-title">31.05.2021</h4>
+                                    <img src="assets/img/jImg1.jpg" alt="img">
+                                    <div class="card-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </div>
+                            </a> 
+                        </div>
+                    </div> -->
+
+
+                    <div class="slider-box">
+                        <div class="sl-boxes sl1">
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg1.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        </a> 
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg2.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sl-boxes sl2">
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg3.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg4.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sl-boxes sl3">
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg5.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg6.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sl-boxes sl4">
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg7.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg8.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sl-boxes sl5">
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg7.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg8.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sl-boxes sl6">
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg6.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg5.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sl-boxes sl7">
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg4.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg3.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sl-boxes sl8">
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg2.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sl-box">
+                                <a href="#" clas="sl-link">
+                                    <div class="time-sl">30.05.2020</div>
+                                    <img src="assets/img/jImg1.jpg" alt="img">
+                                    <div class="sl-text">
+                                        <h3>
+                                            India - Stalin announces relief for crop
+                                            loss due to cyclone Yaas
+                                        </h3>
+                                        <p>
+                                            In the last few years there has been a fast
+                                            growth in the amount of Earth observation (EO)
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
+                    
+
                     <div class="join-box">
                         <div class="join">
                             <div class="adver">
@@ -326,69 +743,81 @@
                         <div class="event-left">
                             <div class="ev-left1">
                                 <a href="#" class="event-link"><span class="event-span"></span>EVENTS</a>
-                                <img src="assets/img/evImg.jpg" alt="img">
-                                <div class="ev-left1-box">
-                                    <h3 class="uni-h-bott">AgroInsurance hosted a webinar dedicated
-                                        to Covid-19 Survey results
-                                    </h3>
-                                    <a href="#" class="event-time">15 June, 2019</a>
-                                    <p class="uni-height-p">
-                                        In the last few years there has been a fast growth
-                                        in the amount of Earth observation (EO) data
-                                        acquiredIn the last few years there has been a fast growth in the amount of Earth 
-                                    </p>
-                                    <a href="#" class="see-all event-see-all">SEE ALL</a>
-                                </div>
+                                <a href="#">
+                                    <img src="assets/img/evImg.jpg" alt="img">
+                                </a>
+                                    <div class="ev-left1-box">
+                                        <a href="#">
+                                            <h3 class="uni-h-bott">AgroInsurance hosted a webinar dedicated
+                                                to Covid-19 Survey results
+                                            </h3>
+                                            <span class="event-time">15 June, 2019</span>
+                                            <p class="uni-height-p">
+                                                In the last few years there has been a fast growth
+                                                in the amount of Earth observation (EO) data
+                                                acquiredIn the last few years there has been a fast growth in the amount of Earth 
+                                            </p>
+                                            <a href="#" class="see-all event-see-all">SEE ALL</a>
+                                        </a>
+                                    </div>   
                             </div>
                             <div class="ev-left2">
                                 <div class="ev-left2-box">
-                                    <h3 class="uni-h">
-                                        AgroInsurance hosted a webinar dedicated
-                                        to Covid-19 Survey results
-                                    </h3>
-                                    <a href="#" class="event-time">15 June, 2019</a>
-                                    <p>
-                                        In the last few years there has been a fast growth
-                                        in the amount of Earth observation (EO) data
-                                        acquiredIn the last few years there has been a fast
-                                    </p>
+                                    <a href="#">
+                                        <h3 class="uni-h">
+                                            AgroInsurance hosted a webinar dedicated
+                                            to Covid-19 Survey results
+                                        </h3>
+                                        <span class="event-time">15 June, 2019</span>
+                                        <p>
+                                            In the last few years there has been a fast growth
+                                            in the amount of Earth observation (EO) data
+                                            acquiredIn the last few years there has been a fast
+                                        </p>
+                                    </a>
                                 </div>
                                 <div class="ev-left2-box">
-                                    <h3>
-                                        AgroInsurance hosted a webinar dedicated
-                                        to Covid-19 Survey results
-                                    </h3>
-                                    <a href="#" class="event-time">15 June, 2019</a>
-                                    <p>
-                                        In the last few years there has been a fast growth
-                                        in the amount of Earth observation (EO) data
-                                        acquiredIn the last few years there has been a fast
-                                    </p>
+                                    <a href="#">
+                                        <h3>
+                                            AgroInsurance hosted a webinar dedicated
+                                            to Covid-19 Survey results
+                                        </h3>
+                                        <span class="event-time">15 June, 2019</span>
+                                        <p>
+                                            In the last few years there has been a fast growth
+                                            in the amount of Earth observation (EO) data
+                                            acquiredIn the last few years there has been a fast
+                                        </p>
+                                    </a>
                                 </div>
                                 <div class="ev-left2-box">
-                                    <h3>
-                                        AgroInsurance hosted a webinar dedicated
-                                        to Covid-19 Survey results
-                                    </h3>
-                                    <a href="#" class="event-time">15 June, 2019</a>
-                                    <p>
-                                        In the last few years there has been a fast growth
-                                        in the amount of Earth observation (EO) data
-                                        acquiredIn the last few years there has been a fast
-                                    </p>
+                                    <a href="#">
+                                        <h3>
+                                            AgroInsurance hosted a webinar dedicated
+                                            to Covid-19 Survey results
+                                        </h3>
+                                        <span class="event-time">15 June, 2019</span>
+                                        <p>
+                                            In the last few years there has been a fast growth
+                                            in the amount of Earth observation (EO) data
+                                            acquiredIn the last few years there has been a fast
+                                        </p>
+                                    </a>
                                 </div>
                                 <div class="ev-left2-box hidden">
-                                    <h3>
-                                        AgroInsurance hosted a webinar dedicated
-                                        to Covid-19 Survey results
-                                    </h3>
-                                    <a href="#" class="event-time">15 June, 2019</a>
-                                    <p>
-                                        In the last few years there has been a fast growth
-                                        in the amount of Earth observation (EO) data
-                                        acquiredIn the last few years there has been a fast
-                                    </p>
-                                    <a href="#" class="see-all hidden-see-all">SEE ALL</a>
+                                    <a href="#"> 
+                                        <h3>
+                                            AgroInsurance hosted a webinar dedicated
+                                            to Covid-19 Survey results
+                                        </h3>
+                                        <span class="event-time">15 June, 2019</span>
+                                        <p>
+                                            In the last few years there has been a fast growth
+                                            in the amount of Earth observation (EO) data
+                                            acquiredIn the last few years there has been a fast
+                                        </p>
+                                        <a href="#" class="see-all hidden-see-all">SEE ALL</a>
+                                    </a>
                                 </div>
                             </div>
                             <div class="advertisement-box"></div>
@@ -397,72 +826,84 @@
                             <div class="ev-right1">
                                 <div class="ev-right1-box r1-b-padding">
                                     <a href="#" class="ev-right-link"><span class="event-span"></span>RISK EVENTS</a>
-                                    <img src="assets/img/evImg2.jpg" alt="img">
+                                    <a href="#">
+                                        <img src="assets/img/evImg2.jpg" alt="img">
+                                    </a>
                                 </div>
                                 <div class="ev-right1-box r1-before mg-top">
-                                    <h3>
-                                        AgroInsurance hosted a webinar dedicated
-                                        to Covid-19 Survey results
-                                    </h3>
-                                    <a href="#" class="event-time">15 June, 2019</a>
-                                    <p>
-                                        In the last few years there has been a fast growth
-                                        in the amount of Earth observation (EO) data
-                                        acquiredIn the last few years there has been a fast
-                                    </p>
+                                    <a href="#">
+                                        <h3>
+                                            AgroInsurance hosted a webinar dedicated
+                                            to Covid-19 Survey results
+                                        </h3>
+                                        <span class="event-time">15 June, 2019</span>
+                                        <p>
+                                            In the last few years there has been a fast growth
+                                            in the amount of Earth observation (EO) data
+                                            acquiredIn the last few years there has been a fast
+                                        </p>
+                                    </a>
                                 </div>
                                 <div class="ev-right1-box mg-top mg-top2">
-                                    <h3>
-                                        AgroInsurance hosted a webinar dedicated
-                                        to Covid-19 Survey results
-                                    </h3>
-                                    <a href="#" class="event-time">15 June, 2019</a>
-                                    <p class="mg-bottom">
-                                        In the last few years there has been a fast growth
-                                        in the amount of Earth observation (EO) data
-                                        acquiredIn the last few years there has been a fast
-                                    </p>
-                                    <a href="" class="see-all">SEE ALL</a>
+                                    <a href="#">
+                                        <h3>
+                                            AgroInsurance hosted a webinar dedicated
+                                            to Covid-19 Survey results
+                                        </h3>
+                                        <span class="event-time">15 June, 2019</span>
+                                        <p class="mg-bottom">
+                                            In the last few years there has been a fast growth
+                                            in the amount of Earth observation (EO) data
+                                            acquiredIn the last few years there has been a fast
+                                        </p>
+                                        <a href="" class="see-all">SEE ALL</a>
+                                    </a>
                                 </div>
                                 <div class="ev-right1-box mg-top mg-top2 hidden2">
-                                    <h3>
-                                        AgroInsurance hosted a webinar dedicated
-                                        to Covid-19 Survey results
-                                    </h3>
-                                    <a href="#" class="event-time">15 June, 2019</a>
-                                    <p class="mg-bottom">
-                                        In the last few years there has been a fast growth
-                                        in the amount of Earth observation (EO) data
-                                        acquiredIn the last few years there has been a fast
-                                    </p>
-                                    <a href="#" class="see-all hidden2-see-all">SEE ALL</a>
+                                    <a href="#">
+                                        <h3>
+                                            AgroInsurance hosted a webinar dedicated
+                                            to Covid-19 Survey results
+                                        </h3>
+                                        <span class="event-time">15 June, 2019</span>
+                                        <p class="mg-bottom">
+                                            In the last few years there has been a fast growth
+                                            in the amount of Earth observation (EO) data
+                                            acquiredIn the last few years there has been a fast
+                                        </p>
+                                        <a href="#" class="see-all hidden2-see-all">SEE ALL</a>
+                                    </a>
                                 </div>
                             </div>
                             <div class="ev-right2">
                                 <div class="ev-right2-box r2-before">
-                                    <div class="line-link"></div>
-                                    <h3>
-                                        AgroInsurance hosted a webinar dedicated
-                                        to Covid-19 Survey results
-                                    </h3>
-                                    <a href="#" class="event-time">15 June, 2019</a>
-                                    <p>
-                                        In the last few years there has been a fast growth
-                                        in the amount of Earth observation (EO) data
-                                        acquiredIn the last few years there has been a fast
-                                    </p>
+                                    <a href="#"> 
+                                        <div class="line-link"></div>
+                                        <h3>
+                                            AgroInsurance hosted a webinar dedicated
+                                            to Covid-19 Survey results
+                                        </h3>
+                                        <span class="event-time">15 June, 2019</span>
+                                        <p>
+                                            In the last few years there has been a fast growth
+                                            in the amount of Earth observation (EO) data
+                                            acquiredIn the last few years there has been a fast
+                                        </p>
+                                    </a>
                                 </div>
                                 <div class="ev-right2-box">
-                                    <h3>
-                                        AgroInsurance hosted a webinar dedicated
-                                        to Covid-19 Survey results
-                                    </h3>
-                                    <a href="#" class="event-time">15 June, 2019</a>
-                                    <p>
-                                        In the last few years there has been a fast growth
-                                        in the amount of Earth observation (EO) data
-                                        acquiredIn the last few years there has been a fast
-                                    </p>
+                                    <a href="#">
+                                        <h3>
+                                            AgroInsurance hosted a webinar dedicated
+                                            to Covid-19 Survey results
+                                        </h3>
+                                        <span class="event-time">15 June, 2019</span>
+                                        <p>
+                                            In the last few years there has been a fast growth
+                                            in the amount of Earth observation (EO) data
+                                            acquiredIn the last few years there has been a fast
+                                        </p>
+                                    </a>
                                 </div>
                                 <div class="ev-right2-box">
                                     <div class="adver2"></div>
@@ -586,7 +1027,8 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="assets/js/slick.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
