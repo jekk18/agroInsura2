@@ -1913,3 +1913,102 @@ button:hover{
     display: flex;
     flex-direction: column;
 }
+
+/* 
+--- documents---
+*/
+.document-slider{
+    margin-top: 35px;
+}
+.document-boxes-slider{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.document-boxes{
+    width: 100%;
+    position: relative;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px
+}
+.document-adver-link{
+    width: fit-content;
+    height: 100%;
+    display: block;
+}
+.document-adver{
+   width: 267px;
+   margin: 0 auto;
+}
+.document-adver img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.document-text{
+    width: 267px;
+    height: 100px;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: -1px;
+    z-index: 13;
+
+    /* box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.62); */
+}
+.document-text-bg{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: #FFFFFF;
+    z-index: 12;
+    transition: 0.4s;
+}
+.document-adver-link:hover .document-text-bg{
+    left: 1%;
+    bottom: -1px;
+    width: 98%;
+    height: 100px;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.62);
+}
+.document-text h3{
+    color: #585858;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    
+    overflow: hidden;
+    padding-top: 12px;
+    z-index: 13;
+    padding-left: 10px;
+    transition: 0.4s;
+}
+.document-adver-link:hover .document-text h3{
+    color: #7AA259;
+}
+.document-slider .slick-slide{
+    padding-left: 0px;
+    padding-right: 11.25px;
+}
+.document-slider .slick-active{
+    padding-left: 0px;
+    padding-right: 11.25px;
+}
+
+.document-slider .slick-active + .slick-active{
+    padding-left: 3.75px;
+    padding-right: 7.5px;
+}
+.document-slider .slick-active + .slick-active + .slick-active{
+    padding-right: 3.75px;
+    padding-left: 7.5px;
+}
+
+.document-slider .slick-active + .slick-active + .slick-active + .slick-active{
+    padding-right: 0px;
+    padding-left: 11.25px;
+}

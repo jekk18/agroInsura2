@@ -130,3 +130,42 @@ $('.news2-slider').slick({
 // } else {
 //    // change functionality for larger screens
 // }
+
+
+$('.document-slider').slick({
+  infinite:false,
+  speed:500,
+  // autoplay:true,
+  draggable:true,
+  // autoplaySpeed:5000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  prevArrow:$('#back-arr'),
+  nextArrow:$('#next-arr'),
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
