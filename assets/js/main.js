@@ -95,8 +95,9 @@ $('.news2-slider').slick({
   // autoplaySpeed:5000,
   slidesToShow: 4,
   slidesToScroll: 4,
-  prevArrow:$('#back-arr'),
-  nextArrow:$('#next-arr'),
+  rows: 4,
+  prevArrow:$('.back'),
+  nextArrow:$('.next'),
   responsive: [
     {
       breakpoint: 1200,
@@ -109,14 +110,16 @@ $('.news2-slider').slick({
       breakpoint: 991,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        rows: 6,
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        rows: 8
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -140,8 +143,9 @@ $('.document-slider').slick({
   // autoplaySpeed:5000,
   slidesToShow: 4,
   slidesToScroll: 4,
-  prevArrow:$('#back-arr'),
-  nextArrow:$('#next-arr'),
+  rows: 3,
+  prevArrow:$('.back'),
+  nextArrow:$('.next'),
   responsive: [
     {
       breakpoint: 1200,
@@ -161,7 +165,8 @@ $('.document-slider').slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        rows: 6
       }
     }
     // You can unslick at a given breakpoint now by adding:

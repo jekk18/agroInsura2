@@ -300,7 +300,7 @@
         line-height: 16px;
     }
     .logo a img{
-        max-width: 212px;
+        max-width: 190px;
     }
     .nav{
         padding-left: 40px;
@@ -1163,6 +1163,18 @@
     }
     .document-slider{
         margin-top: 8px;
+    }
+    .back-next-box1{
+        display: none;
+    }
+    .back-next-box2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 23px;
+    }
+    .next2, .back2{
+        background: none;
     }
 }
 @media (max-width: 767px){
