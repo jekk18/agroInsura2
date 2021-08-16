@@ -174,3 +174,31 @@ $('.document-slider').slick({
     // instead of a settings object
   ]
 });
+
+
+var next = document.querySelector(".next");
+var back = document.querySelector(".back");
+var inpVal = document.querySelector(".number-slide");
+var inpVal2 = document.querySelector(".number-side2");
+// console.log(next, back, inpVal);
+    next.addEventListener('click', function(){
+        if(next.classList.contains("slick-disabled")){
+          console.log("break");
+          // break;
+        }
+          inpVal.value = parseInt(inpVal.value) + 1;
+          inpVal2.value = parseInt(inpVal2.value) - 1;
+    });
+
+    
+    back.addEventListener('click', function(){
+      if(inpVal.value > 5){
+        inpVal.value = parseInt(inpVal.value) - 1;
+        inpVal2.value = parseInt(inpVal2.value) + 1;
+      }else{
+        console.log("br");
+          inpVal.value = 5;
+          inpVal2.value = 365;
+        }
+  });
+

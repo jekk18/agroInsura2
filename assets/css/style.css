@@ -1692,13 +1692,25 @@ button:hover{
     font-weight: bold;
     color: #4A821B;
     margin-right: 10px;
+    outline: none;
+    background: none;
+    border: none;
+    width: 20px;
 }
 .count{
     font-weight: bold;
     font-size: 14px;
     color: #4A821B;
 }
-
+.count1{
+    outline: none;
+    background: none;
+    border: none;
+    width: 30px;
+    color: #4A821B;
+    font-weight: bold;
+    font-size: 14px;
+}
 .news2-sl-text p{
     height: 55px;
 }
