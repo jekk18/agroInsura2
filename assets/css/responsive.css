@@ -251,6 +251,9 @@
          height: 365px;
          overflow: hidden;
      }
+     .section-mg{
+         margin-top: 30px;
+     }
      .news-sl-text h3{
          font-size: 14px;
          line-height: 16px;
@@ -263,6 +266,9 @@
      }
      .news-sl-box img{
          height: 148px;
+     }
+     .cut-height{
+         font-size: 16px;
      }
      /* 
         ------- news2 ------
@@ -309,6 +315,18 @@
     }
     .send-box{
         margin-bottom: 30px;
+    }
+    /* 
+        ------ document2---
+    */
+    .hidden-heighr2{
+        height: 324px;
+    }
+    .docuemnt-r1-img{
+        height: 372px;
+    }
+    .section-margin2{
+        margin-bottom: 60px;
     }
 }
 
@@ -684,7 +702,15 @@
         height: 208px;
         /* margin-top: 15px; */
     }
-
+      /* 
+        ------ document2---
+    */
+    .hidden-heighr2{
+        height: 384px;
+    }
+    .docuemnt-r1-img{
+        height: 324px;
+    }
 }
 
 @media (max-width:991px){
@@ -1161,6 +1187,9 @@
      .news-title{
          font-size: 16px;
      }
+     .cut-height{
+        font-size: 13px;
+    }
      .news-time{
          margin: 20px 0;
      }
@@ -1175,6 +1204,9 @@
     }
     .news-text-p{
         height: 36px;
+    }
+    .news-slider {
+        margin-bottom: 13px;
     }
     .hidden-height{
         height: 358px;
@@ -1242,6 +1274,10 @@
     .next2, .back2{
         background: none;
     }
+    .news2-tit, .bg-news-link{
+        background: #FFFFFF;
+    }
+
     /* 
         ----- contact -----
     */
@@ -1300,6 +1336,27 @@
     .contact-bg-img{
         height: 158px;
         /* margin-top: 15px; */
+    }
+      /* 
+        ------ document2---
+    */
+    /* .hidden-heighr2{
+        height: 324px;
+    } */
+    .docuemnt-r1-img{
+        height: 242px;
+    }
+    .section-margin2{
+        margin-bottom: 35px;
+    }
+    .document2-link {
+        background: #FFFFFF;
+    }
+    .download-article{
+        font-size: 12px;
+    }
+    .download-title{
+        font-size: 10px;
     }
 }
 @media (max-width: 767px){
@@ -1701,9 +1758,16 @@
     /* 
     ----- news -----
     */
+    .about-img{
+        padding: 0;
+    }
     .news-title{
         font-size: 12px;
         width: 100%;
+        /* overflow: hidden; */
+    }
+    .news-title .cut-height{
+        height: 23px;
         overflow: hidden;
     }
     .source{
@@ -1724,6 +1788,30 @@
     }
     .news-text-p{
         height: 36px;
+    }
+    .hidden-back-next{
+        display: none;
+    }
+    .float-box{
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+    .l-text{
+        display: block;
+    }
+    /* .float-right{
+        align-items: flex-end;
+    } */
+    .project-link{
+        font-size: 12px;
+        padding-right: 18px;
+        padding-top: 4px;
+        padding-bottom: 6px;
+    }
+    .section-mg{
+        margin-top: 0;
     }
     .hidden-height{
         height: 350px;
@@ -1766,7 +1854,7 @@
         width: 14%;
     } */
     .news2-tit{
-        font-size: 12px;
+        font-size: 14px;
     }
          /* 
      ------ document --------
@@ -1854,6 +1942,61 @@
         height: 390px;
         padding: 0;
     }
+    /* 
+        ----- document2 ---
+    */
+    .document2-box{
+        position: relative;
+    }
+    .document2-title{
+        width: 51%;
+        margin-top: 30px;
+        z-index: 1111111;
+        padding-left: 5px;
+    }
+    .news-title .cut-height2{
+        line-height: 17px!important;
+        font-size: 11px!important;
+        height: 30px!important;
+    }
+    .document2-text{
+        margin-top: 130px;
+    }
+    .news-title .document2-time{
+        font-size: 12px;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .document2-right{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        margin: 0;
+        right: 1px;
+        /* z-index: -1; */
+    }
+    .document2-r1-img{
+        width: 154px;
+        height: 210px;
+        position: absolute;
+        right: 16px;
+        margin-left: 17px;
+    }
+    .download{
+        position: absolute;
+        top: 112px;
+        left: 0;
+        z-index: 99999999999;
+        width: 50%;
+    }
+    .download-link img{
+        height: 30px;
+    }
+    .download-title{
+        margin-left: 15px;
+    }
 }
 @media (max-width: 620px){
     .burger-menu.active{
@@ -1920,5 +2063,22 @@
 @media (max-width:361px){
     .left-text h3{
         height: 35px;
+    }
+    .document2-r1-img{
+        width: 140px;
+        right: 10px;
+    }
+    .document2-title{
+       
+        padding-left: 0;
+    }
+    .download-article{
+        margin-left: 0;
+    }
+    .download-link{
+        padding-left: 0;
+    }
+    .download-title{
+        margin-left: 10px;
     }
 }

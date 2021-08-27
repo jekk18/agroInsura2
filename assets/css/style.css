@@ -1459,10 +1459,39 @@ button:hover{
 .about-i{
     padding: 4px 7px;
     /* background: red; */
-    border: 1px solid #707070;
+    border: 1px solid rgba(229,229,229,0.8);
     border-radius: 3px;
     width: fit-content;
     margin-right: 5px;
+    transition: 0.4s;
+}
+.soc2 a{
+    transition: 0.4s;
+    font-weight: bold;
+}
+.soc2 a:first-child{
+    color: #385898;
+}
+.soc2 a:nth-child(2){
+    color: #1a0dab;
+}
+.social-box a{
+    transition: 0.4s;
+    font-weight: bold;
+}
+.social-box a:first-child{
+    color: #385898;
+}
+.social-box a:nth-child(2){
+    color: #1a0dab;
+}
+/* .soc2 a:hover{
+    color: #787878;
+} */
+.about-f:hover,
+.about-t:hover,
+.about-i:hover{
+    border: 1px solid #979797;
 }
 .about-f span,
 .about-t span,
@@ -1606,6 +1635,10 @@ button:hover{
     font-size: 18px;
     font-weight: bold;
     color: #6A6A6A;
+    text-transform: uppercase;
+}
+.cut-height{
+    font-size: 18px;
 }
 .news-title .news-time{
     color: #4A821B;
@@ -1614,15 +1647,23 @@ button:hover{
     margin: 25px 0;
 }
 .source{
-    margin-top: 50px;
+    margin-top:35px;
     transition: 0.4s;
 }
 .source:hover .source1{
     text-decoration: underline!important;
 }
-.soc2{
-    margin-top: 10px;
+.hidden-height{
+    height: 475px;
+    overflow: hidden;
 }
+.float-box{
+    display: none;
+    width: 100%;
+}
+/* .soc2{
+    margin-top: 10px;
+} */
 .news-slider{
     margin-top: 30px;
     margin-bottom: 42px;
@@ -1765,6 +1806,9 @@ button:hover{
 /* 
 --- documents---
 */
+.section-margin{
+    margin-top: -53px;
+}
 .back-next-box2{
     display: none;
 }
@@ -2018,4 +2062,81 @@ button:hover{
     color: #9B9B9B;
     background: #F5F5F5;
     box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.55);
+}
+
+/* 
+---- document2 ----
+*/
+.document2-link{
+    margin-bottom: 20px;
+}
+.docuemnt-r1-img{
+    height: 475px;
+    width: fit-content;
+}
+.docuemnt-r1-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.download{
+    width: 100%;
+    padding-left: 10px;
+}
+.download-article{
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: rgba(68,68,68,0.69);
+}
+.download-link{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    padding-left: 10px;
+    /* border: 1px solid black; */
+    position: relative;
+    transition: 0.5s;
+}
+.download-link:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(112,112,112,0.22);
+    transition: 0.5s;
+}
+.download-link:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(112,112,112,0.22);
+    transition: 0.5s;
+}
+.download-link:hover::after{
+    background: rgba(112,112,112,1);
+}
+.download-link:hover::before{
+    background: rgba(112,112,112,1);
+}
+.download-title{
+    font-size: 12px;
+    font-weight: 700;
+    color: #4A821B;
+    margin-left: 18px;
+    transition: 0.4s;
+}
+.download-title:hover{
+    text-decoration: underline;
+}
+
+.hidden-height2{
+    height: 345px;
+    overflow: hidden;
 }
