@@ -1,6 +1,6 @@
 @media (min-width:1200px){
     .right a:hover .right-text{
-        transform: translateY(42px);
+        transform: translateY(43px);
     }
 }
 
@@ -49,7 +49,7 @@
     }
     .right-text p{
         margin-bottom: 0;
-        height: 32px;
+        height: 31px;
         font-size: 12px;
     }
 
@@ -287,7 +287,7 @@
         margin-left: -1px;
      }
      .document-text h3{
-        font-size: 14px;
+        font-size: 13px;
      }
      .document-adver-link:hover .document-text-bg{
         left: 1%;
@@ -643,7 +643,7 @@
         margin-left: -1px;
      }
      .document-text h3{
-        font-size: 12px;
+        font-size: 11px;
         line-height: 18px;
      }
      .document-adver-link:hover .document-text-bg{

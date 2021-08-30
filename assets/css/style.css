@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap'); */
 body{
     margin: 0;
     padding: 0;
@@ -60,6 +60,8 @@ li .nav-a{
     font-size: 18px;
     color: #4A821B;
     /* line-height: 26px; */
+    font-family: 'Bahnschrift';
+    font-weight: 400;
     padding: 2px 4px;
     display: block;
     position: relative;
@@ -144,6 +146,8 @@ li:last-child{
     overflow: hidden;
     padding-left: 17px;
     font-size: 14px;
+    font-family: 'Bahnschrift';
+    font-weight: 400;
     color: #979797;
 }
 .search-btn{
@@ -208,6 +212,7 @@ li:last-child{
     padding-bottom: 10px;
     text-decoration: none;
     font-size: 16px;
+    font-family: 'Open Sans';
     font-weight: 700;
     color: #6A6A6A;
     transition: 0.4s;
@@ -244,7 +249,8 @@ li:last-child{
     font-weight: 700;
     color: #FFFFFF;
     line-height: 22px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
+
 }
 .left-text p{
     height: 62px;
@@ -252,7 +258,8 @@ li:last-child{
     font-size: 16px;
     color: #FFFFFF;
     line-height: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
+    font-weight: 400;
     margin-bottom: 0;
 }
 
@@ -301,6 +308,7 @@ li:last-child{
 .time span{
     text-decoration: none;
     font-size: 14px;
+    font-family: 'Open Sans';
     font-weight: 700;
     color: #9B9B9B;
 }
@@ -317,6 +325,7 @@ li:last-child{
 }
 .right-text h3{
     font-size: 14px;
+    font-family: 'Open Sans';
     font-weight: 700;
     color: #FFFFFF;
     line-height: 16px;
@@ -329,6 +338,8 @@ li:last-child{
     height: 30px;
     overflow: hidden;
     color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-weight: 400;
 }
 
 /* 
@@ -368,7 +379,7 @@ li:last-child{
     color: #6A6A6A;
     padding-left: 29px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     position: relative;
     transition: 0.4s;
 }
@@ -398,7 +409,7 @@ li:last-child{
 .load-text{
     font-size: 14px;
     font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     line-height: 18px;
     color: rgba(74,130,27,0.69)!important;
     transition: 0.4s;
@@ -456,8 +467,10 @@ li:last-child{
     line-height: 20px;
     padding-bottom: 3px;
     position: relative;
-    max-width: 50px;
+    max-width: 55px;
     transition: 0.5s;
+    font-family: 'Bahnschrift';
+    font-weight: 600;
 }
 .see-all::before{
     content: "";
@@ -548,8 +561,8 @@ li:last-child{
 .event-link{
     font-size: 16px;
     font-weight: 700;
-    color: #6A6A6A!important;
-    font-family: 'Open Sans', sans-serif;
+    color: #6A6A6A;
+    font-family: 'Open Sans';
     position: absolute;
     top: 0;
     left: 0;
@@ -601,7 +614,7 @@ li:last-child{
     font-weight: 700;
     color: #585858;
     line-height: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     height: 40px;
     overflow: hidden;
     margin-bottom: 0;
@@ -613,6 +626,7 @@ li:last-child{
 }
 .event-time{
     font-size: 14px;
+    font-family: 'Bahnschrift';
     font-weight: 600;
     line-height: 20px;
     color: #4A821B;
@@ -628,7 +642,7 @@ li:last-child{
     font-size: 14px;
     font-weight: 400;
     color: #606060;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     margin: 0;
     height: 44px;
     overflow: hidden;
@@ -743,7 +757,7 @@ li:last-child{
     font-size: 16px;
     font-weight: 700;
     color: #6A6A6A;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     position: absolute;
     top: 0;
     left: 0;
@@ -777,7 +791,7 @@ li:last-child{
     font-weight: 700;
     color: #585858;
     line-height: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     height: 40px;
     overflow: hidden;
     margin-bottom: 0;
@@ -807,7 +821,7 @@ li:last-child{
     font-size: 14px;
     font-weight: 400;
     color: #606060;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     margin: 0;
     height: 44px;
     overflow: hidden;
@@ -856,7 +870,7 @@ li:last-child{
     font-size: 16px;
     font-weight: 700;
     color: #6A6A6A;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     margin-top: 29px;
     margin-bottom: 24px;
     /* background: #FFFFFF; */
@@ -928,13 +942,13 @@ li:last-child{
     padding-right: 8px;
     margin: 0;
     color: #585858;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     transition: 0.5s;
 }
 .scr-box p{
     font-size: 14px;
     font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     color: #888888;
     padding-left: 25px;
     padding-bottom: 15px;
@@ -1038,6 +1052,8 @@ footer{
 .footer-a{
     font-size: 16px;
     color: #686868;
+    font-family: 'Bahnschrift';
+    font-weight: 400;
     display: inline-block;
     width: 49%;
     padding: 4px 0;
@@ -1069,6 +1085,7 @@ footer{
     font-size: 14px;
     color: #686868;
     font-weight: 600;
+    font-family: 'Bahnschrift';
     transition: 0.4s;
 }
 .contact ul li a:hover{
@@ -1078,6 +1095,8 @@ footer{
 .contact h3{
     font-size: 16px;
     color: #686868;
+    font-weight: 600;
+    font-family: 'Bahnschrift';
     font-weight: 600;
 }
 
@@ -1090,6 +1109,8 @@ footer{
 .form-box h3{
     font-size: 14px;
     color: #525450;
+    font-family: 'Bahnschrift';
+    font-weight: 400;
 }
 form{
     position: relative;
@@ -1109,6 +1130,8 @@ button{
     position: absolute;
     right: 0;
     font-size: 14px;
+    font-family: 'Bahnschrift';
+    font-weight: 400;
     color: #4A821B;
     padding: 0 10px;
     border: none;
@@ -1152,6 +1175,8 @@ button:hover{
     color: #FFFFFF;
     transition: 0.4s;
     margin: 0;
+    font-family: 'Bahnschrift';
+    font-weight: 400;
 }
 .organisation a:hover{
     text-decoration: underline;
@@ -1234,7 +1259,7 @@ button:hover{
     padding: 8px 14px;
     font-size: 12px;
     font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     color: #989898;
     background: #FFFFFF;
     transition: 0.4s;
@@ -1255,7 +1280,7 @@ button:hover{
     font-size: 16px;
     font-weight: 700;
     color: #414141;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     line-height: 20px;
     transition: 0.4s;
 }
@@ -1266,7 +1291,7 @@ button:hover{
     overflow: hidden;
     font-size: 14px;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     color: #414141;
     line-height: 18px;
     transition: 0.4s;
@@ -1382,7 +1407,7 @@ button:hover{
     font-size: 16px;
     font-weight: 700;
     color: #6A6A6A;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     margin-top: 38px;
     margin-bottom: 29px;
     /* background: #FFFFFF; */
@@ -1468,6 +1493,7 @@ button:hover{
 .soc2 a{
     transition: 0.4s;
     font-weight: bold;
+    font-family: 'Open Sans';
 }
 .soc2 a:first-child{
     color: #385898;
@@ -1544,6 +1570,7 @@ button:hover{
     padding-bottom: 10px;
     text-decoration: none;
     font-size: 16px;
+    font-family: 'Open Sans';
     font-weight: 700;
     color: #6A6A6A;
     transition: 0.4s;
@@ -1582,19 +1609,22 @@ button:hover{
     color: #414141;
     line-height: 18px;
     font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     transition: 0.4s;
 }
 .text-a-link{
     font-size: 14px;
     line-height: 20px;
     color: #538227;
+    font-family: 'Bahnschrift';
+    font-weight: 600;
     margin: 5px 0;
 }
 .text-p{
     font-size: 14px;
     color: #414141;
     font-weight: 400;
+    font-family: 'Open Sans';
     height: 56px;
     overflow: hidden;
     line-height: 18px;
@@ -1623,6 +1653,8 @@ button:hover{
     height: initial;
     padding-bottom: 30px;
     line-height: 32px;
+    font-family: 'Open Sans';
+    font-weight: 400;
 }
 
 
@@ -1633,6 +1665,7 @@ button:hover{
 
 .news-title{
     font-size: 18px;
+    font-family: 'Open Sans';
     font-weight: bold;
     color: #6A6A6A;
     text-transform: uppercase;
@@ -1642,6 +1675,7 @@ button:hover{
 }
 .news-title .news-time{
     color: #4A821B;
+    font-family: 'Open Sans';
     font-weight: bold;
     font-size: 16px;
     margin: 25px 0;
@@ -1707,6 +1741,7 @@ button:hover{
     height: 100%;
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Open Sans';
     color: #6A6A6A;
     padding-right: 100px;
     transition: 0.4s;
@@ -1875,11 +1910,11 @@ button:hover{
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
-    
+    font-family: 'Open Sans';
     overflow: hidden;
     padding-top: 12px;
     z-index: 13;
-    padding-left: 10px;
+    padding-left: 7px;
     transition: 0.4s;
 }
 .document-adver-link:hover .document-text h3{
@@ -1962,6 +1997,8 @@ button:hover{
 .cont-links a{
     font-size: 16px;
     color: #9B9B9B;
+    font-family: 'Open Sans';
+    font-weight: 400;
     display: block;
     justify-content: flex-start;
     display: flex;
@@ -2001,6 +2038,8 @@ button:hover{
   align-items: center;
   font-size: 16px;
   color: #9B9B9B;
+  font-family: 'Open Sans';
+  font-weight: 400;
   background: #F5F5F5;
   margin-bottom: 23px;
   border-radius: 0;
@@ -2012,6 +2051,8 @@ button:hover{
     display: flex;
     align-items: center;
     font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
     color: #9B9B9B;
     background: #F5F5F5;
     /* margin-bottom: 23px; */
@@ -2030,6 +2071,8 @@ button:hover{
     align-items: center;
     font-size: 16px;
     color: #9B9B9B;
+    font-family: 'Open Sans';
+    font-weight: 400;
     background: #F5F5F5;
     /* margin-bottom: 23px; */
     padding-top: 30px;
@@ -2050,6 +2093,7 @@ button:hover{
     color: #FFFFFF;
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Open Sans';
     padding: 16px 65px;
     background: #4A821B;
     transition: 0.5s;
@@ -2089,6 +2133,7 @@ button:hover{
     font-weight: 700;
     margin-left: 10px;
     color: rgba(68,68,68,0.69);
+    font-family: 'Open Sans';
 }
 .download-link{
     display: flex;
@@ -2130,6 +2175,7 @@ button:hover{
     font-weight: 700;
     color: #4A821B;
     margin-left: 18px;
+    font-family: 'Open Sans';
     transition: 0.4s;
 }
 .download-title:hover{
