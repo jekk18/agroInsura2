@@ -1897,14 +1897,19 @@ button:hover{
     background: #FFFFFF;
     z-index: 12;
     transition: 0.4s;
-}
-.document-adver-link:hover .document-text-bg{
     left: 1%;
     bottom: -1px;
     width: 98%;
     height: 100px;
     box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.62);
 }
+/* .document-adver-link:hover .document-text-bg{
+    left: 1%;
+    bottom: -1px;
+    width: 98%;
+    height: 100px;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.62);
+} */
 .document-text h3{
     color: #585858;
     font-size: 16px;
@@ -1943,7 +1948,9 @@ button:hover{
     padding-left: 11.25px;
 }
 
-
+.slick-initialized .slick-slide{
+    overflow-x: hidden;
+}
 /* 
 --- contact ---
 */
@@ -1974,10 +1981,10 @@ button:hover{
     /* align-items: center; */
 }
 .contact-links{
-    width: 33%;
+    width: 36%;
     /* background: red; */
     position: relative;
-    padding-right: 40px;
+    /* padding-right: 40px; */
 }
 .contact-links::before{
     content: "";
@@ -2013,8 +2020,10 @@ button:hover{
     font-size: 28px;
     color: #4A821B;
     margin-right: 27px;
-    transition: 0.4s;
-    
+    transition: 0.4s;   
+}
+.cont-links a span.icon-mail{
+    font-size: 23px;
 }
 .cont-links:hover a span{
     transform: translateX(8px);
